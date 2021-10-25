@@ -2,9 +2,9 @@ window.addEventListener("deviceorientation",on_device_orientation);
 
 function on_device_orientation(event) {
     //preluam valorile unghiurilor
-    let alpha = evt.alpha;
-    let beta = evt.beta;
-    let gamma = evt.gamma;
+    let alpha = event.alpha;
+    let beta = event.beta;
+    let gamma = event.gamma;
     //le afisam in paragrafe
     document.getElementById('a').innerHTML = "alpha = " + alpha;
     document.getElementById('b').innerHTML = "beta = " + alpha;
