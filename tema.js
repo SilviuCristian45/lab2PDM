@@ -11,10 +11,11 @@ function on_device_orientation(evt) {
 
     let canvas = document.getElementById("canvas");
     let context = canvas.getContext("2d");
+    let basicRadius = 10;
     context.clearRect(0, 0, c.width, c.height);
     context.fillStyle = "#19C0F5";
     context.beginPath();
     //gamma = (gamma < 0) ? -1*gamma : gamma; //daca gamma e cu -
-    context.arc(180, 150, gamma,0, 2 * Math.PI);
+    context.arc(180, 150, basicRadius+gamma,0, 2 * Math.PI);
     context.fill();
 }
