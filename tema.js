@@ -11,10 +11,8 @@ function on_device_orientation(evt) {
 
     let canvas = document.getElementById("canvas");
     let context = canvas.getContext("2d");
-    let centru = {x:canvas.width/2, y:canvas.height/2}
-    let latura_patrat = 50;
     context.clearRect(0, 0, c.width, c.height);
-    context.fillStyle = "#6A0888";
+    context.fillStyle = "#19C0F5";
     context.beginPath();
-    context.arc(180, 150, gamma);
+    context.arc(180, 150, gamma,0, 2 * Math.PI);
 }
