@@ -16,6 +16,7 @@ function on_device_orientation(evt) {
     context.fillStyle = "#19C0F5";
     context.beginPath();
     //gamma = (gamma < 0) ? -1*gamma : gamma; //daca gamma e cu -
+    document.getElementById("b").innerHTML = basicRadius+gamma;
     context.arc(180, 150, basicRadius+gamma,0, 2 * Math.PI);
     context.fill();
 }
