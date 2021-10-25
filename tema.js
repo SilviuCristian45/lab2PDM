@@ -15,4 +15,5 @@ function on_device_orientation(evt) {
     context.fillStyle = "#19C0F5";
     context.beginPath();
     context.arc(180, 150, gamma,0, 2 * Math.PI);
+    context.fill();
 }
